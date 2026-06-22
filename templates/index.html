@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vansh Tanwar | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#07152c;
+color:white;
+}
+
+.container{
+width:90%;
+margin:auto;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 0;
+position:sticky;
+top:0;
+background:#07152c;
+z-index:1000;
+}
+
+.logo{
+font-size:2rem;
+font-weight:700;
+color:#34f5d0;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+font-weight:500;
+}
+
+.hero{
+min-height:90vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:50px;
+}
+
+.hero-text{
+flex:1;
+}
+
+.hero-text h1{
+font-size:4.5rem;
+}
+
+.hero-text span{
+color:#34f5d0;
+}
+
+.hero-text h2{
+margin-top:15px;
+font-size:2rem;
+}
+
+.hero-text p{
+margin-top:20px;
+font-size:1.1rem;
+line-height:1.8;
+color:#d0d0d0;
+}
+
+.buttons{
+margin-top:30px;
+display:flex;
+gap:20px;
+}
+
+.btn{
+padding:15px 30px;
+background:#34f5d0;
+border:none;
+border-radius:10px;
+font-weight:600;
+cursor:pointer;
+}
+
+.hero-image{
+flex:1;
+display:flex;
+justify-content:center;
+}
+
+.hero-image img{
+width:350px;
+height:350px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #34f5d0;
+}
+
+section{
+padding:100px 0;
+}
+
+.section-title{
+text-align:center;
+font-size:3rem;
+margin-bottom:50px;
+color:#34f5d0;
+}
+
+.about{
+display:flex;
+gap:50px;
+align-items:center;
+}
+
+.about-img img{
+width:300px;
+border-radius:20px;
+}
+
+.about-content h3{
+font-size:2rem;
+margin-bottom:20px;
+}
+
+.about-content p{
+line-height:1.8;
+color:#d0d0d0;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+
+<div class="logo">
+VANSH TANWAR
+</div>
+
+<nav>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<div class="hero-text">
+
+<h1>Hi, I'm <span>Vansh Tanwar</span></h1>
+
+<h2>Python Developer & Problem Solver</h2>
+
+<p>
+Passionate developer skilled in Python, Flask,
+DSA and AI Projects. I love building useful
+applications and solving challenging problems.
+</p>
+
+<div class="buttons">
+
+<a href="resume.pdf" download>
+<button class="btn">Download Resume</button>
+</a>
+
+<button class="btn" onclick="scrollToChat()">
+Ask Something
+</button>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<img src="static/image1.jpeg" alt="Profile">
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">About Me</h2>
+
+<div class="about">
+
+<div class="about-img">
+<img src="static/image2.jpeg">
+</div>
+
+<div class="about-content">
+
+<h3>Who Am I?</h3>
+
+<p>
+I'm Vansh Tanwar, a Python Developer passionate
+about Web Development, Artificial Intelligence
+and Data Structures & Algorithms.
+
+I regularly solve LeetCode problems,
+build Flask applications, AI assistants,
+and custom software projects.
+</p>
+
+</div>
+
+</div>
+
+</section>
+<style>
+
+.skills-grid,
+.services-grid,
+.projects-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#102548;
+padding:30px;
+border-radius:15px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+color:#34f5d0;
+margin-bottom:15px;
+}
+
+.card p{
+color:#d0d0d0;
+line-height:1.6;
+}
+
+.project-btn{
+margin-top:15px;
+padding:10px 20px;
+border:none;
+border-radius:8px;
+background:#34f5d0;
+font-weight:600;
+cursor:pointer;
+}
+
+.contact{
+text-align:center;
+}
+
+.contact p{
+margin:15px 0;
+color:#d0d0d0;
+font-size:1.1rem;
+}
+
+</style>
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="skills-grid">
+
+<div class="card">
+<h3>Python</h3>
+<p>Advanced Python programming and automation.</p>
+</div>
+
+<div class="card">
+<h3>Flask</h3>
+<p>Building web applications and APIs.</p>
+</div>
+
+<div class="card">
+<h3>DSA</h3>
+<p>LeetCode problem solving and algorithms.</p>
+</div>
+
+<div class="card">
+<h3>HTML/CSS/JS</h3>
+<p>Responsive modern web development.</p>
+</div>
+
+<div class="card">
+<h3>Git & GitHub</h3>
+<p>Version control and project management.</p>
+</div>
+
+<div class="card">
+<h3>AI Projects</h3>
+<p>OpenAI and OpenRouter based applications.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section id="services">
+
+<h2 class="section-title">Services</h2>
+
+<div class="services-grid">
+
+<div class="card">
+<h3>Web Development</h3>
+<p>
+Responsive websites using Flask,
+HTML, CSS and JavaScript.
+</p>
+</div>
+
+<div class="card">
+<h3>Python Development</h3>
+<p>
+Custom Python applications,
+automation tools and APIs.
+</p>
+</div>
+
+<div class="card">
+<h3>AI Integration</h3>
+<p>
+Chatbots and AI-powered solutions
+using modern LLMs.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="projects-grid">
+
+<div class="card">
+
+<h3>Jarvis AI Assistant</h3>
+
+<p>
+Voice-enabled AI assistant built using
+Flask, OpenAI/OpenRouter and speech features.
+</p>
+
+<a href="https://github.com/vansh1236/jarvis2.0" target="_blank">
+    <button class="project-btn">View Project</button>
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>Programming Language Interpreter</h3>
+
+<p>
+Custom language with Lexer,
+Parser and Interpreter written in Python.
+</p>
+
+<a href="https://github.com/vansh1236/vLang" target="_blank">
+    <button class="project-btn">View Project</button>
+</a>
+
+</div>
+
+<div class="card">
+
+    <h3>Portfolio Website</h3>
+
+    <p>
+        Modern responsive portfolio website
+        with AI chatbot integration.
+    </p>
+
+    <button
+        class="project-btn"
+        onclick="alert('Project coming soon!')">
+        View Project
+    </button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+    <h3>LeetCode Journey</h3>
+
+    <p>
+        100+ coding questions solved
+        covering DSA and problem solving.
+    </p>
+
+    <a href="https://leetcode.com/u/Vansh_tanwar12/" target="_blank">
+        <button class="project-btn">
+            View Profile
+        </button>
+    </a>
+
+</div>
+
+</div>
+
+</section>
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2 class="section-title">Contact Me</h2>
+
+<div class="contact">
+
+<p>📧 Email: vanshtanwar995@gmail.com</p>
+
+<p>💻 GitHub: github.com/vansh1236</p>
+
+<p>📍 India</p>
+
+</div>
+
+</section>
+
+<!-- AI CHATBOT -->
+
+<section id="chat">
+
+<h2 class="section-title">Ask Vansh AI 🤖</h2>
+
+<div class="chat-container">
+
+<div id="chatBox" class="chat-box">
+
+<div class="bot-msg">
+Hello 👋 Ask me anything about Vansh.
+</div>
+
+</div>
+
+<div class="chat-input">
+
+<input
+type="text"
+id="userInput"
+placeholder="Ask something..."
+>
+
+<button onclick="sendMessage()">
+Send
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Vansh Tanwar</h3>
+
+<p>
+Built with Flask, Python & OpenRouter 
+</p>
+
+<p>
+JAY SHREE RAM
+</p>
+
+</footer>
+
+</div>
+
+<style>
+
+.chat-container{
+max-width:800px;
+margin:auto;
+}
+
+.chat-box{
+height:350px;
+overflow-y:auto;
+background:#102548;
+padding:20px;
+border-radius:15px;
+margin-bottom:20px;
+}
+
+.user-msg{
+background:#34f5d0;
+color:black;
+padding:12px;
+border-radius:10px;
+margin:10px 0;
+text-align:right;
+}
+
+.bot-msg{
+background:#1b3564;
+padding:12px;
+border-radius:10px;
+margin:10px 0;
+}
+
+.chat-input{
+display:flex;
+gap:10px;
+}
+
+.chat-input input{
+flex:1;
+padding:15px;
+border:none;
+border-radius:10px;
+font-size:16px;
+}
+
+.chat-input button{
+padding:15px 25px;
+background:#34f5d0;
+border:none;
+border-radius:10px;
+font-weight:600;
+cursor:pointer;
+}
+
+footer{
+text-align:center;
+padding:60px 0;
+margin-top:50px;
+border-top:1px solid rgba(255,255,255,.1);
+}
+
+footer h3{
+color:#34f5d0;
+margin-bottom:10px;
+}
+
+</style>
+
+<script>
+
+function scrollToChat(){
+document.getElementById("chat")
+.scrollIntoView({
+behavior:"smooth"
+});
+}
+
+async function sendMessage(){
+
+let input =
+document.getElementById("userInput");
+
+let chatBox =
+document.getElementById("chatBox");
+
+let message =
+input.value.trim();
+
+if(message==="") return;
+
+chatBox.innerHTML +=
+`<div class="user-msg">
+${message}
+</div>`;
+
+input.value="";
+
+try{
+
+const response =
+await fetch("/chat",{
+
+method:"POST",
+
+headers:{
+"Content-Type":"application/json"
+},
+
+body:JSON.stringify({
+message:message
+})
+
+});
+
+const data =
+await response.json();
+
+chatBox.innerHTML +=
+`<div class="bot-msg">
+${data.reply}
+</div>`;
+
+chatBox.scrollTop =
+chatBox.scrollHeight;
+
+}
+
+catch(error){
+
+chatBox.innerHTML +=
+`<div class="bot-msg">
+Server Error
+</div>`;
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
